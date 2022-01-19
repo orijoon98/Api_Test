@@ -1,0 +1,14 @@
+{
+  "url": "/shh_newFilter",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "shh_newFilter",
+    "params": [
+      {
+        "topics": ["0x12341234bf4b564f"],
+        "to": "0x2341234bf4b2341234bf4b564f..."
+      }
+    ],
+    "id": 73
+  }
+}

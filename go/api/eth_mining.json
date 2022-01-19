@@ -1,0 +1,4 @@
+{
+  "url": "/eth_mining",
+  "body": { "jsonrpc": "2.0", "method": "eth_mining", "params": [], "id": 71 }
+}

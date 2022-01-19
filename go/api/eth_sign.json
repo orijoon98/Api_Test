@@ -1,0 +1,9 @@
+{
+  "url": "/eth_sign",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_sign",
+    "params": ["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],
+    "id": 1
+  }
+}

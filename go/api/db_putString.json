@@ -1,0 +1,9 @@
+{
+  "url": "/db_putString",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "db_putString",
+    "params": ["testDB", "myKey", "myString"],
+    "id": 73
+  }
+}

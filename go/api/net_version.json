@@ -1,0 +1,4 @@
+{
+  "url": "/net_version",
+  "body": { "jsonrpc": "2.0", "method": "net_version", "params": [], "id": 67 }
+}

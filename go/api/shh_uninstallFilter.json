@@ -1,0 +1,9 @@
+{
+  "url": "/shh_uninstallFilter",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "shh_uninstallFilter",
+    "params": ["0x7"],
+    "id": 73
+  }
+}

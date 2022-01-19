@@ -1,0 +1,9 @@
+{
+  "url": "/db_getHex",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "db_getHex",
+    "params": ["testDB", "myKey"],
+    "id": 73
+  }
+}

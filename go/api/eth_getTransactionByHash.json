@@ -1,0 +1,15 @@
+{
+  "url": "/eth_getTransactionByHash",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_getTransactionByHash",
+    "params": [],
+    "id": 1,
+    "test": {
+      "random": true,
+      "data-type": 1,
+      "data-byte": 32,
+      "test-count": 1
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "url": "/web3_sha3",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "web3_sha3",
+    "params": [
+      "0nDhgCD3r2xwopHExkiztqzJPn6Z9FR4fIcB00R4gdH8PGSOuIxqcNkOMe2Xf0sNL2LxoX"
+    ],
+    "id": 1
+  }
+}

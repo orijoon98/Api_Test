@@ -1,0 +1,9 @@
+{
+  "url": "/web3_clientVersion",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "web3_clientVersion",
+    "params": [],
+    "id": 1
+  }
+}

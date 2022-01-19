@@ -1,0 +1,9 @@
+{
+  "url": "/eth_getFilterChanges",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_getFilterChanges",
+    "params": ["0x16"],
+    "id": 73
+  }
+}

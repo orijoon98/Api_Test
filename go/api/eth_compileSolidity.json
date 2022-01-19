@@ -1,0 +1,11 @@
+{
+  "url": "/eth_compileSolidity",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_compileSolidity",
+    "params": [
+      "contract test { function multiply(uint a) returns(uint d) {   return a * 7;   } }"
+    ],
+    "id": 1
+  }
+}

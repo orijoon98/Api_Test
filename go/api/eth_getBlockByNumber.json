@@ -1,0 +1,13 @@
+{
+  "url": "/eth_getBlockByNumber",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_getBlockByNumber",
+    "params": [],
+    "id": 1,
+    "test": {
+      "random": true,
+      "test-count": 1
+    }
+  }
+}

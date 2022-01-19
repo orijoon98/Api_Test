@@ -1,0 +1,9 @@
+{
+  "url": "/net_listening",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "net_listening",
+    "params": [],
+    "id": 67
+  }
+}

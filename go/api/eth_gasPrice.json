@@ -1,0 +1,4 @@
+{
+  "url": "/eth_gasPrice",
+  "body": { "jsonrpc": "2.0", "method": "eth_gasPrice", "params": [], "id": 73 }
+}

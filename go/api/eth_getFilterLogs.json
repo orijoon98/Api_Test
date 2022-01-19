@@ -1,0 +1,9 @@
+{
+  "url": "/eth_getFilterLogs",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_getFilterLogs",
+    "params": ["0x16"],
+    "id": 74
+  }
+}

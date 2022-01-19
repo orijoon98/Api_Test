@@ -1,0 +1,9 @@
+{
+  "url": "/eth_newFilter",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_newFilter",
+    "params": [{ "topics": ["0x12341234"] }],
+    "id": 73
+  }
+}

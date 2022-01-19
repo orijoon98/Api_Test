@@ -1,0 +1,4 @@
+{
+  "url": "/shh_newGroup",
+  "body": { "jsonrpc": "2.0", "method": "shh_newGroup", "params": [], "id": 73 }
+}

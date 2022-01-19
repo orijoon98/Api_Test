@@ -1,0 +1,14 @@
+{
+  "url": "/eth_getTransactionByBlockNumberAndIndex",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_getTransactionByBlockNumberAndIndex",
+    "params": [],
+    "id": 1,
+    "test": {
+      "random": true,
+      "quantity-type": 1,
+      "test-count": 1
+    }
+  }
+}

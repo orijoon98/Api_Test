@@ -1,0 +1,4 @@
+{
+  "url": "/eth_getWork",
+  "body": { "jsonrpc": "2.0", "method": "eth_getWork", "params": [], "id": 73 }
+}

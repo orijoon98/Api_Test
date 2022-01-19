@@ -1,0 +1,4 @@
+{
+  "url": "/eth_accounts",
+  "body": { "jsonrpc": "2.0", "method": "eth_accounts", "params": [], "id": 1 }
+}

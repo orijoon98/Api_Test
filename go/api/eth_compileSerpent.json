@@ -1,0 +1,9 @@
+{
+  "url": "/eth_compileSerpent",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_compileSerpent",
+    "params": ["/* some serpent */"],
+    "id": 1
+  }
+}

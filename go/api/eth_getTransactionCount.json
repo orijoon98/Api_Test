@@ -1,0 +1,15 @@
+{
+  "url": "/eth_getTransactionCount",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_getTransactionCount",
+    "params": [],
+    "id": 1,
+    "test": {
+      "random": true,
+      "data-type": 1,
+      "data-byte": 20,
+      "test-count": 1
+    }
+  }
+}

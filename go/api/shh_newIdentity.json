@@ -1,0 +1,9 @@
+{
+  "url": "/shh_newIdentity",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "shh_newIdentity",
+    "params": [],
+    "id": 73
+  }
+}

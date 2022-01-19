@@ -1,0 +1,9 @@
+{
+  "url": "/eth_protocolVersion",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_protocolVersion",
+    "params": [],
+    "id": 67
+  }
+}

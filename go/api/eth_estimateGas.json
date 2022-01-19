@@ -1,0 +1,21 @@
+{
+  "url": "/eth_estimateGas",
+  "body": {
+    "jsonrpc": "2.0",
+    "method": "eth_estimateGas",
+    "params": [],
+    "id": 1,
+    "test": {
+      "random": true,
+      "from-type": 1,
+      "from-byte": 20,
+      "to-type": 1,
+      "to-byte": 20,
+      "gas-type": 1,
+      "gasPrice-type": 1,
+      "value-type": 1,
+      "data-type": 1,
+      "test-count": 1
+    }
+  }
+}
