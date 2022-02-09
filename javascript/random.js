@@ -21,6 +21,13 @@ exports.randomHex = (size) => {
   return result;
 };
 
+exports.randomQuantity = (max) => {
+  let random = Math.floor(Math.random() * max + 1);
+  let hex = random.toString(16);
+  let result = '0x' + hex;
+  return result;
+};
+
 exports.randomBoolean = () => {
   if (Math.floor(Math.random() * 2)) return true;
   return false;
