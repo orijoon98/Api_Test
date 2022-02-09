@@ -20,8 +20,10 @@ exports.post = (method, params) => {
 
   request.post(options, (error, response, body) => {
     if (error != null) {
+      log.error('Request: ' + host + method);
       log.error(error);
     }
+    log.info('Request: ' + host + method);
     log.info(body);
   });
 };
