@@ -4,6 +4,18 @@ const log = require('tracer').colorConsole({
   format: '{{message}}',
 });
 
+// web3_clientVersion
+// net_version
+// eth_protocolVersion
+// eth_coinbase
+// eth_gasPrice
+// eth_blockNumber
+// Test
+exports.noParams = (method) => {
+  params = [];
+  http.post(method, params);
+};
+
 // eth_getBalance
 // eth_getTransactionCount
 // Random Test

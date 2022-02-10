@@ -1,5 +1,12 @@
 const test = require('./test');
 
+// test.noParams('web3_clientVersion');
+// test.noParams('net_version');
+// test.noParams('eth_protocolVersion');
+// test.noParams('eth_coinbase');
+// test.noParams('eth_gasPrice');
+// test.noParams('eth_blockNumber');
+
 // test.dataQuantityTagRandom('eth_getBalance', 'hex', 20, 'tag', 1, 5);
 // test.dataQuantityTag(
 //   'eth_getBalance',
