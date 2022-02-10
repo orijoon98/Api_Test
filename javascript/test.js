@@ -220,7 +220,7 @@ exports.dataBooleanRandom = (
 };
 
 // eth_getBlockByHash
-// Random Test
+// Test
 // 1. Data
 // 2. Boolean
 exports.dataBoolean = (
@@ -229,5 +229,46 @@ exports.dataBoolean = (
   boolean
 ) => {
   params = [data, boolean];
+  http.post(method, params);
+};
+
+// eth_getBlockByNumber
+// Random Test
+// 1. Quantity|Tag
+// 2. Boolean
+exports.quantityTagBooleanRandom = (
+  method, // string
+  quantityTagType, // quantity, tag
+  maxQuantity, // number
+  testCount // number
+) => {
+  for (let i = 0; i < testCount; i++) {
+    let quantityOrTag, boolean, params;
+    switch (quantityTagType) {
+      case 'quantity':
+        quantityOrTag = creator.randomQuantity(maxQuantity);
+        break;
+      case 'tag':
+        quantityOrTag = creator.randomTag();
+        break;
+      default:
+        log.error('파라미터 입력값을 확인해주세요.');
+    }
+    boolean = creator.randomBoolean();
+    params = [quantityOrTag, boolean];
+    http.post(method, params);
+  }
+};
+
+// eth_getBlockByNumber
+// Test
+// 1. Quantity|Tag
+// 2. Boolean
+exports.quantityTagBoolean = (
+  method, // string
+  quantityTag,
+  boolean
+) => {
+  params = [quantityTag, boolean];
   http.post(method, params);
 };

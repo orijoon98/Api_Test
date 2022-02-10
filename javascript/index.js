@@ -72,3 +72,6 @@ const test = require('./test');
 //   '0x509db365908adb76136e11ab935e8a8328d3380dd12ff1a646509282258d456a',
 //   false
 // );
+
+// test.quantityTagBooleanRandom('eth_getBlockByNumber', 'tag', 1, 5);
+// test.quantityTagBoolean('eth_getBlockByNumber', 'latest', false);
