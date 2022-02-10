@@ -273,6 +273,7 @@ exports.quantityTagBoolean = (
   http.post(method, params);
 };
 
+// web3_sha3
 // eth_getTransactionByHash
 // eth_getTransactionReceipt
 // Random Test
@@ -300,6 +301,7 @@ exports.dataRandom = (
   }
 };
 
+// web3_sha3
 // eth_getTransactionByHash
 // eth_getTransactionReceipt
 // Test

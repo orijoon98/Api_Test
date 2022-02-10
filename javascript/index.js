@@ -88,6 +88,12 @@ const test = require('./test');
 //   '0x759c9d4efb86d36545a3e8cdf9640c3161011ee414f068d622eef0232bd7b99f'
 // );
 
+// test.dataRandom('web3_sha3', 'hex', 32, 5);
+// test.data(
+//   'web3_sha3',
+//   '0x759c9d4efb86d36545a3e8cdf9640c3161011ee414f068d622eef0232bd7b99f'
+// );
+
 // test.dataQuantityRandom(
 //   'eth_getTransactionByBlockHashAndIndex',
 //   'hex',
