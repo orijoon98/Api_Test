@@ -65,3 +65,10 @@ const test = require('./test');
 //   null,
 //   null
 // );
+
+// test.dataBooleanRandom('eth_getBlockByHash', 'hex', 32, 5);
+// test.dataBoolean(
+//   'eth_getBlockByHash',
+//   '0x509db365908adb76136e11ab935e8a8328d3380dd12ff1a646509282258d456a',
+//   false
+// );

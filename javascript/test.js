@@ -190,3 +190,44 @@ exports.objectQuantityTag = (
   ];
   http.post(method, params);
 };
+
+// eth_getBlockByHash
+// Random Test
+// 1. Data
+// 2. Boolean
+exports.dataBooleanRandom = (
+  method, // string
+  dataType, // hex, string
+  dataByte, // number
+  testCount // number
+) => {
+  for (let i = 0; i < testCount; i++) {
+    let data, boolean, params;
+    switch (dataType) {
+      case 'hex':
+        data = creator.randomHex(2 * dataByte);
+        break;
+      case 'string':
+        data = creator.randomString(dataByte);
+        break;
+      default:
+        log.error('파라미터 입력값을 확인해주세요.');
+    }
+    boolean = creator.randomBoolean();
+    params = [data, boolean];
+    http.post(method, params);
+  }
+};
+
+// eth_getBlockByHash
+// Random Test
+// 1. Data
+// 2. Boolean
+exports.dataBoolean = (
+  method, // string
+  data,
+  boolean
+) => {
+  params = [data, boolean];
+  http.post(method, params);
+};
