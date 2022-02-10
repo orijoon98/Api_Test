@@ -21,9 +21,14 @@ exports.post = (method, params) => {
   request.post(options, (error, response, body) => {
     if (error != null) {
       log.error('Request: ' + host + method);
+      log.error('Params: ' + params);
       log.error(error);
+      log.error('\n');
+    } else {
+      log.info('Request: ' + host + method);
+      log.info('Params: ' + params);
+      log.info(body);
+      log.info('\n');
     }
-    log.info('Request: ' + host + method);
-    log.info(body);
   });
 };
