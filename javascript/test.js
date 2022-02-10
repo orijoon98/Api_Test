@@ -14,7 +14,7 @@ exports.dataQuantityTagRandom = (
   dataType, // hex, string
   dataByte, // number
   quantityTagType, // quantity, tag
-  maxQuantity, // number
+  maxQuantityTag, // number
   testCount // number
 ) => {
   for (let i = 0; i < testCount; i++) {
@@ -31,7 +31,7 @@ exports.dataQuantityTagRandom = (
     }
     switch (quantityTagType) {
       case 'quantity':
-        quantityOrTag = creator.randomQuantity(maxQuantity);
+        quantityOrTag = creator.randomQuantity(maxQuantityTag);
         break;
       case 'tag':
         quantityOrTag = creator.randomTag();
@@ -75,7 +75,7 @@ exports.objectQuantityTagRandom = (
   dataType, // hex, string, null
   dataByte, // number
   quantityTagType, // quantity, tag, null
-  maxQuantity, // number
+  maxQuantityTag, // number
   testCount // number
 ) => {
   for (let i = 0; i < testCount; i++) {
@@ -136,7 +136,7 @@ exports.objectQuantityTagRandom = (
     }
     switch (quantityTagType) {
       case 'quantity':
-        quantityOrTag = creator.randomQuantity(maxQuantity);
+        quantityOrTag = creator.randomQuantity(maxQuantityTag);
         break;
       case 'tag':
         quantityOrTag = creator.randomTag();
@@ -239,14 +239,14 @@ exports.dataBoolean = (
 exports.quantityTagBooleanRandom = (
   method, // string
   quantityTagType, // quantity, tag
-  maxQuantity, // number
+  maxQuantityTag, // number
   testCount // number
 ) => {
   for (let i = 0; i < testCount; i++) {
     let quantityOrTag, boolean, params;
     switch (quantityTagType) {
       case 'quantity':
-        quantityOrTag = creator.randomQuantity(maxQuantity);
+        quantityOrTag = creator.randomQuantity(maxQuantityTag);
         break;
       case 'tag':
         quantityOrTag = creator.randomTag();
