@@ -75,3 +75,15 @@ const test = require('./test');
 
 // test.quantityTagBooleanRandom('eth_getBlockByNumber', 'tag', 1, 5);
 // test.quantityTagBoolean('eth_getBlockByNumber', 'latest', false);
+
+// test.dataRandom('eth_getTransactionByHash', 'hex', 32, 5);
+// test.data(
+//   'eth_getTransactionByHash',
+//   '0x759c9d4efb86d36545a3e8cdf9640c3161011ee414f068d622eef0232bd7b99f'
+// );
+
+// test.dataRandom('eth_getTransactionReceipt', 'hex', 32, 5);
+// test.data(
+//   'eth_getTransactionReceipt',
+//   '0x759c9d4efb86d36545a3e8cdf9640c3161011ee414f068d622eef0232bd7b99f'
+// );

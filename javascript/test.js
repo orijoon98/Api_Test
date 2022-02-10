@@ -272,3 +272,42 @@ exports.quantityTagBoolean = (
   params = [quantityTag, boolean];
   http.post(method, params);
 };
+
+// eth_getTransactionByHash
+// eth_getTransactionReceipt
+// Random Test
+// 1. Data
+exports.dataRandom = (
+  method, // string
+  dataType, // hex, string
+  dataByte, // number
+  testCount // number
+) => {
+  for (let i = 0; i < testCount; i++) {
+    let data, params;
+    switch (dataType) {
+      case 'hex':
+        data = creator.randomHex(2 * dataByte);
+        break;
+      case 'string':
+        data = creator.randomString(dataByte);
+        break;
+      default:
+        log.error('파라미터 입력값을 확인해주세요.');
+    }
+    params = [data];
+    http.post(method, params);
+  }
+};
+
+// eth_getTransactionByHash
+// eth_getTransactionReceipt
+// Test
+// 1. Data
+exports.data = (
+  method, // string
+  data
+) => {
+  params = [data];
+  http.post(method, params);
+};
