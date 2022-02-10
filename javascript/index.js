@@ -100,3 +100,16 @@ const test = require('./test');
 //   '0xe4174d8d96a4ec7ddaa7aaaacab794850a092b53eed77f64af4e3f06e4ea6d20',
 //   0
 // );
+
+// test.quantityTagQuantityRandom(
+//   'eth_getTransactionByBlockNumberAndIndex',
+//   'tag',
+//   1,
+//   1,
+//   5
+// );
+// test.quantityTagQuantity(
+//   'eth_getTransactionByBlockNumberAndIndex',
+//   'latest',
+//   0
+// );

@@ -353,3 +353,45 @@ exports.dataQuantity = (
   params = [data, quantity];
   http.post(method, params);
 };
+
+// eth_getTransactionByBlockNumberAndIndex
+// Random Test
+// 1. Quantity|Tag
+// 2. Quantity
+exports.quantityTagQuantityRandom = (
+  method, // string
+  quantityTagType, // quantity, tag
+  maxQuantityTag, // number
+  maxQuantity,
+  testCount // number
+) => {
+  for (let i = 0; i < testCount; i++) {
+    let quantityOrTag, quantity, params;
+    switch (quantityTagType) {
+      case 'quantity':
+        quantityOrTag = creator.randomQuantity(maxQuantityTag);
+        break;
+      case 'tag':
+        quantityOrTag = creator.randomTag();
+        break;
+      default:
+        log.error('파라미터 입력값을 확인해주세요.');
+    }
+    quantity = creator.randomQuantity(maxQuantity);
+    params = [quantityOrTag, quantity];
+    http.post(method, params);
+  }
+};
+
+// eth_getTransactionByBlockNumberAndIndex
+// Test
+// 1. Quantity|Tag
+// 2. Quantity
+exports.quantityTagQuantity = (
+  method, // string
+  quantityTag,
+  quantity
+) => {
+  params = [quantityTag, quantity];
+  http.post(method, params);
+};
