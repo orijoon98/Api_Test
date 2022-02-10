@@ -87,3 +87,16 @@ const test = require('./test');
 //   'eth_getTransactionReceipt',
 //   '0x759c9d4efb86d36545a3e8cdf9640c3161011ee414f068d622eef0232bd7b99f'
 // );
+
+test.dataQuantityRandom(
+  'eth_getTransactionByBlockHashAndIndex',
+  'hex',
+  32,
+  1,
+  5
+);
+test.dataQuantity(
+  'eth_getTransactionByBlockHashAndIndex',
+  '0xe4174d8d96a4ec7ddaa7aaaacab794850a092b53eed77f64af4e3f06e4ea6d20',
+  0
+);

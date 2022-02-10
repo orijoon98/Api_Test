@@ -311,3 +311,45 @@ exports.data = (
   params = [data];
   http.post(method, params);
 };
+
+// eth_getTransactionByBlockHashAndIndex
+// Random Test
+// 1. Data
+// 2. Quantity
+exports.dataQuantityRandom = (
+  method, // string
+  dataType, // hex, string
+  dataByte, // number
+  maxQuantity, // number
+  testCount // number
+) => {
+  for (let i = 0; i < testCount; i++) {
+    let data, quantity, params;
+    switch (dataType) {
+      case 'hex':
+        data = creator.randomHex(2 * dataByte);
+        break;
+      case 'string':
+        data = creator.randomString(dataByte);
+        break;
+      default:
+        log.error('파라미터 입력값을 확인해주세요.');
+    }
+    quantity = creator.randomQuantity(maxQuantity);
+    params = [data, quantity];
+    http.post(method, params);
+  }
+};
+
+// eth_getTransactionByBlockHashAndIndex
+// Test
+// 1. Data
+// 2. Quantity
+exports.dataQuantity = (
+  method, // string
+  data,
+  quantity
+) => {
+  params = [data, quantity];
+  http.post(method, params);
+};
