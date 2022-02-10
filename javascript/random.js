@@ -22,7 +22,7 @@ exports.randomHex = (size) => {
 };
 
 exports.randomQuantity = (max) => {
-  let random = Math.floor(Math.random() * max + 1);
+  let random = Math.floor(Math.random() * (max + 1));
   let hex = random.toString(16);
   let result = '0x' + hex;
   return result;
